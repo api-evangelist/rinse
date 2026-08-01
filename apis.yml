@@ -1,7 +1,26 @@
 aid: rinse
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rinse.png
 name: Rinse
-description: 'Rinse is a company surfaced as a portfolio company of partech and added to the API Evangelist
-  network as a stub for enrichment. Sector: Consumer. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Rinse is a laundry and dry cleaning delivery service that picks up customers''
+  clothes from home, professionally cleans them, and returns them on a recurring or one-off
+  schedule. It runs a wash & fold and dry cleaning model in which uniformed valets handle
+  evening pickup and delivery (typically 7pm-10pm) across major U.S. metros including the
+  San Francisco Bay Area, New York, Los Angeles, Chicago, Washington D.C., Boston, Seattle,
+  and Austin, plus Toronto. Rinse emphasizes convenience, garment care, sustainability, and
+  employing its valets as W-2 employees with benefits. The company is backed by Partech and is
+  tracked in the API Evangelist network. As of this enrichment pass Rinse publishes a consumer
+  web and mobile product but no public developer API, developer portal, or API documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/rinse/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +30,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
 - Consumer
+- Laundry
+- Dry Cleaning
+- Delivery
+- Logistics
+- On-Demand
+- Local Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +47,28 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/rinse-domain-security.yml
 - type: Website
   url: https://www.rinse.com/
+- type: Pricing
+  url: https://www.rinse.com/services-pricing/
+- type: SignUp
+  url: https://www.rinse.com/customers/signup/
+- type: Login
+  url: https://www.rinse.com/accounts/login/
+- type: TermsOfService
+  url: https://www.rinse.com/terms-of-use/
+- type: PrivacyPolicy
+  url: https://www.rinse.com/privacy/
+- type: Blog
+  url: https://www.rinse.com/blog/
+- type: Support
+  url: https://www.rinse.com/contact/
+- type: HelpCenter
+  url: https://www.rinse.com/faqs/
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
